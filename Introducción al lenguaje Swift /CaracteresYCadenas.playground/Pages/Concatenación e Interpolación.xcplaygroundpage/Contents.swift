@@ -4,8 +4,8 @@ import Foundation
 var myString = "Bienvenidos" + " " + "al curso de Swift"
 myString += "\n¿Os está gustando la clase?"
 
-let name = "Brais Moure"
-let country = "España"
+let name = "Juan"
+let country = "Ecuador"
 
 let myPersonalInfo = "Mi nombre es " + name + " y vivo en " + country
 

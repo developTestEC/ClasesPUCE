@@ -1,9 +1,9 @@
 import Foundation
 
 // Comparación
-let name1 = "Brais"
+let name1 = "Pedro"
 let name2 = "Juan"
-let name3 = "Brais"
+let name3 = "Pedro"
 
 // No son iguales
 name1 == name2

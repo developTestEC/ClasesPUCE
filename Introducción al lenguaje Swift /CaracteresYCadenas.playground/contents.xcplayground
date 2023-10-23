@@ -4,6 +4,8 @@
         <page name='Tipo de dato String'/>
         <page name='Caracteres, Unicode y Emojis'/>
         <page name='Concatenación e Interpolación'/>
-        <page name='Comparación y otras operaciones'/>
+        <page name='Comparación y otras operaciones'/>
+        <page name='Colecciones'/>
+        <page name='Untitled Page'/>
     </pages>
 </playground>
