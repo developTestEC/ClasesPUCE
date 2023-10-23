@@ -43,3 +43,48 @@ func calculadora (value1: Double, value2: Double , operation: Operaciones )-> Do
 }
 
 var resultCalculadora = calculadora(value1: 5, value2: 5, operation: sumatoria)
+
+//Enumeraciones
+
+enum MessageStatus {
+    case sent
+    case received
+    case read
+}
+
+//
+
+enum Status {
+    case sent(message: String)
+    case received(message: String)
+    case read
+}
+
+let status = Status.received(message: "Hola mundo")
+
+enum CompassPoint {
+    case north, south, east, west
+}
+
+
+//raw values
+enum MessageEncoded: String {
+    case keyOne = "12345678"
+    case keyTwo = "qwerty"
+}
+
+let messageEncoded = MessageEncoded.keyOne.rawValue
+messageEncoded
+
+
+enum Planet: Int {
+    case mercury = 1, venus, earth, mars, jupiter, saturn, uranus, neptune
+}
+
+func printNumberOfPlanet (_ planet : Planet){
+    print("El planeta \(planet ) es el \(planet.rawValue) planeta del sitema solar")
+}
+printNumberOfPlanet(Planet.neptune)
+
+
+
