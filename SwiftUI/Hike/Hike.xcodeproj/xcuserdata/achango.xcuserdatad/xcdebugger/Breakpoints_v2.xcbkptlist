@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6F1755C6-2CFD-4969-A7F9-40D995531445"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FED010C-295D-480A-B82B-64C4481DDA89"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Hike/Component/SettingsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "9FED010C-295D-480A-B82B-64C4481DDA89 - ec9d192d5e9ea362"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.listRowSeparator(_: SwiftUI.Visibility, edges: SwiftUI.VerticalEdge.Set) -&gt; some&gt;&gt;.0 in Hike.SettingsView.body.getter : some"
+                  moduleName = "Hike"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/achango/Documents/SwiftClasesPUCE/git/ClasesPUCE/SwiftUI/Hike/Hike/Component/SettingsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "237">
+               </Location>
+               <Location
+                  uuid = "9FED010C-295D-480A-B82B-64C4481DDA89 - 48f1b94708b95a92"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.foregroundStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.listRowSeparator(_: SwiftUI.Visibility, edges: SwiftUI.VerticalEdge.Set) -&gt; some&gt;&gt;.0 in Hike.SettingsView.body.getter : some"
+                  moduleName = "Hike"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/achango/Documents/SwiftClasesPUCE/git/ClasesPUCE/SwiftUI/Hike/Hike/Component/SettingsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "4680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
