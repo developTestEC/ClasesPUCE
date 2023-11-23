@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "313F4FE9-6EE4-4350-8B8C-72528035E674"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B9284ED-BC82-40D2-80F1-C6FE82D16E58"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShapeDependency/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "pickerView(_:didSelectRow:inComponent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE9E8FD5-E3D0-404D-BA3F-ED0331D7EC02"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShapeDependency/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "pickerView(_:didSelectRow:inComponent:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BDDA125-D479-4AF4-9150-619A5A5312A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShapeDependency/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "calculateShape(shape:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72E4B486-EEC3-48A8-BC62-BB3CCB9E863F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShapeDependency/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "calculateShape(shape:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72E4B486-EEC3-48A8-BC62-BB3CCB9E863F - 78bc6f9157ec7113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShapeDependency.ViewController.calculateShape(shape: Swift.String) -&gt; ()"
+                  moduleName = "ShapeDependency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/achango/Documents/SwiftClasesPUCE/git/ClasesPUCE/ShapeDependency/ShapeDependency/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "72E4B486-EEC3-48A8-BC62-BB3CCB9E863F - 78bc6f9157ec7113"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShapeDependency.ViewController.calculateShape(shape: Swift.String) -&gt; ()"
+                  moduleName = "ShapeDependency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/achango/Documents/SwiftClasesPUCE/git/ClasesPUCE/ShapeDependency/ShapeDependency/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "362">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12DF2C00-5995-4457-B0FC-DC7B1583853E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShapeDependency/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "calculateShape(shape:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "12DF2C00-5995-4457-B0FC-DC7B1583853E - 78bc6f9157ec7172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShapeDependency.ViewController.calculateShape(shape: Swift.String) -&gt; ()"
+                  moduleName = "ShapeDependency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/achango/Documents/SwiftClasesPUCE/git/ClasesPUCE/ShapeDependency/ShapeDependency/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "802">
+               </Location>
+               <Location
+                  uuid = "12DF2C00-5995-4457-B0FC-DC7B1583853E - 78bc6f9157ec7172"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShapeDependency.ViewController.calculateShape(shape: Swift.String) -&gt; ()"
+                  moduleName = "ShapeDependency"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/achango/Documents/SwiftClasesPUCE/git/ClasesPUCE/ShapeDependency/ShapeDependency/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "1018">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
