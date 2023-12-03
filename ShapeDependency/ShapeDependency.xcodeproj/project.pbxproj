@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		031987D92B1D09BE006CD17E /* ShapesSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031987D82B1D09BE006CD17E /* ShapesSelectorViewController.swift */; };
+		031987DB2B1D0CC9006CD17E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031987DA2B1D0CC9006CD17E /* WebViewController.swift */; };
+		031987FF2B1D1775006CD17E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031987FE2B1D1775006CD17E /* ResultViewController.swift */; };
+		031988012B1D1C2D006CD17E /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031988002B1D1C2D006CD17E /* MapsViewController.swift */; };
+		031988032B1D1CC6006CD17E /* ShapesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031988022B1D1CC6006CD17E /* ShapesTableViewController.swift */; };
+		031988052B1D1CFA006CD17E /* ShapesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031988042B1D1CFA006CD17E /* ShapesModel.swift */; };
+		031988072B1D1DBC006CD17E /* ShapesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031988062B1D1DBC006CD17E /* ShapesData.swift */; };
+		031988092B1D1EFF006CD17E /* ShapesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031988082B1D1EFF006CD17E /* ShapesTableViewCell.swift */; };
+		0319880B2B1D267A006CD17E /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0319880A2B1D267A006CD17E /* PaddingLabel.swift */; };
 		033E0C4B2B0FC014000B5720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033E0C4A2B0FC014000B5720 /* AppDelegate.swift */; };
 		033E0C4D2B0FC014000B5720 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033E0C4C2B0FC014000B5720 /* SceneDelegate.swift */; };
 		033E0C4F2B0FC014000B5720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033E0C4E2B0FC014000B5720 /* ViewController.swift */; };
@@ -18,6 +27,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		031987D82B1D09BE006CD17E /* ShapesSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesSelectorViewController.swift; sourceTree = "<group>"; };
+		031987DA2B1D0CC9006CD17E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		031987FE2B1D1775006CD17E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		031988002B1D1C2D006CD17E /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		031988022B1D1CC6006CD17E /* ShapesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesTableViewController.swift; sourceTree = "<group>"; };
+		031988042B1D1CFA006CD17E /* ShapesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesModel.swift; sourceTree = "<group>"; };
+		031988062B1D1DBC006CD17E /* ShapesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesData.swift; sourceTree = "<group>"; };
+		031988082B1D1EFF006CD17E /* ShapesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapesTableViewCell.swift; sourceTree = "<group>"; };
+		0319880A2B1D267A006CD17E /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		033E0C472B0FC014000B5720 /* ShapeDependency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShapeDependency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		033E0C4A2B0FC014000B5720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		033E0C4C2B0FC014000B5720 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +88,15 @@
 				033E0C532B0FC016000B5720 /* Assets.xcassets */,
 				033E0C552B0FC016000B5720 /* LaunchScreen.storyboard */,
 				033E0C582B0FC016000B5720 /* Info.plist */,
+				031988082B1D1EFF006CD17E /* ShapesTableViewCell.swift */,
+				031987D82B1D09BE006CD17E /* ShapesSelectorViewController.swift */,
+				031987DA2B1D0CC9006CD17E /* WebViewController.swift */,
+				031987FE2B1D1775006CD17E /* ResultViewController.swift */,
+				031988002B1D1C2D006CD17E /* MapsViewController.swift */,
+				031988022B1D1CC6006CD17E /* ShapesTableViewController.swift */,
+				031988042B1D1CFA006CD17E /* ShapesModel.swift */,
+				031988062B1D1DBC006CD17E /* ShapesData.swift */,
+				0319880A2B1D267A006CD17E /* PaddingLabel.swift */,
 			);
 			path = ShapeDependency;
 			sourceTree = "<group>";
@@ -167,9 +194,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0319880B2B1D267A006CD17E /* PaddingLabel.swift in Sources */,
 				033E0C4F2B0FC014000B5720 /* ViewController.swift in Sources */,
+				031988072B1D1DBC006CD17E /* ShapesData.swift in Sources */,
+				031987D92B1D09BE006CD17E /* ShapesSelectorViewController.swift in Sources */,
+				031988052B1D1CFA006CD17E /* ShapesModel.swift in Sources */,
+				031988012B1D1C2D006CD17E /* MapsViewController.swift in Sources */,
 				033E0C4B2B0FC014000B5720 /* AppDelegate.swift in Sources */,
+				031988032B1D1CC6006CD17E /* ShapesTableViewController.swift in Sources */,
+				031987DB2B1D0CC9006CD17E /* WebViewController.swift in Sources */,
 				033E0C4D2B0FC014000B5720 /* SceneDelegate.swift in Sources */,
+				031988092B1D1EFF006CD17E /* ShapesTableViewCell.swift in Sources */,
+				031987FF2B1D1775006CD17E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

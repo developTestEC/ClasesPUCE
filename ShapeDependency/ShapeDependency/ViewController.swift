@@ -11,6 +11,7 @@ import Figlet
 typealias ShapeOperator = (Double,Double?) -> String
 class ViewController: UIViewController {
     var shapeSelected = String()
+    var shapeAreaResult = ""
     let calculator = GeometricAreaCalculator()
     var square : ShapeOperator = { side, _  in
         let calculator = GeometricAreaCalculator()
@@ -29,33 +30,68 @@ class ViewController: UIViewController {
     }
     let shapes = ["Cuadrado","Rectangulo","Circulo","Rombo"]
 
+
+    @IBOutlet weak var shapeImage: UIImageView!
+
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var shapesSelector: UITextField!
     private var shapePicker: UIPickerView! = UIPickerView()
-    @IBOutlet weak var fristParameterLabel: UILabel!
+    @IBOutlet weak var firstParameterLabel: UILabel!
     @IBOutlet weak var secondParameterLabel: UILabel!
     @IBOutlet weak var firstParameterTextField: UITextField!
     @IBOutlet weak var secondParameterTextField: UITextField!
+
+    @IBOutlet weak var contentView: UIView! {
+        didSet {
+            contentView.layer.cornerRadius = 20
+        }
+    }
+
+    @IBOutlet weak var continueButton: UIButton!{
+        didSet {
+            continueButton.layer.cornerRadius = 10.0
+            continueButton.isEnabled = false
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         shapePicker.delegate = self
         shapePicker.dataSource = self
         self.shapesSelector.inputView = shapePicker
+        firstParameterTextField.delegate = self
+        secondParameterTextField.delegate = self
+        self.hideKeyboardWhenTappedAround() 
+
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-            fristParameterLabel.isHidden = true
-            firstParameterTextField.isHidden = true
-            secondParameterLabel.isHidden = true
-            secondParameterTextField.isHidden = true
+        self.setUpUI()
+
+    }
+    func setUpUI () {
+
+        firstParameterLabel.isHidden = true
+        firstParameterTextField.isHidden = true
+        secondParameterLabel.isHidden = true
+        secondParameterTextField.isHidden = true
     }
 
 
 
     @IBAction func calculateAction(_ sender: Any) {
         self.calculateShape(shape: self.shapeSelected)
-        Figlet.say("Hello")
+        firstParameterTextField.text = ""
+        secondParameterTextField.text = ""
+        self.performSegue(withIdentifier: "showResult", sender: nil)
+
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let target = segue.destination as? ResultViewController {
+            target.result = self.shapeAreaResult
+        }
     }
     func configureViewWith(shape : String) {
         switch shape {
@@ -89,33 +125,42 @@ class ViewController: UIViewController {
         default :
             print("No se encontro Figura")
         }
+        shapeAreaResult = result
         resultLabel.text = result
     }
 
     func showSquare(){
-        fristParameterLabel.isHidden = false
+        firstParameterLabel.isHidden = false
         firstParameterTextField.isHidden = false
         secondParameterLabel.isHidden = true
         secondParameterTextField.isHidden = true
-        fristParameterLabel.text = "Ingrese Lado"
+        firstParameterLabel.text = "Ingrese Lado"
+        shapeImage.image = UIImage(named: "cuadrado")
+        shapeImage.contentMode = .scaleAspectFit
+        continueButton.isEnabled = true
+
     }
     func showRectangle(){
-        fristParameterLabel.isHidden = false
+        firstParameterLabel.isHidden = false
         firstParameterTextField.isHidden = false
         secondParameterLabel.isHidden = false
         secondParameterTextField.isHidden = false
         secondParameterLabel.text = "Ingrese Ancho"
-        fristParameterLabel.text = "Ingrese Largo"
+        firstParameterLabel.text = "Ingrese Largo"
+        shapeImage.image = UIImage(named: "rectangulo")
+        shapeImage.contentMode = .scaleAspectFit
+        continueButton.isEnabled = true
     }
     func showCircle(){
-        fristParameterLabel.isHidden = false
+        firstParameterLabel.isHidden = false
         firstParameterTextField.isHidden = false
         secondParameterLabel.isHidden = true
         secondParameterTextField.isHidden = true
-        fristParameterLabel.text = "Ingrese Radio"
+        firstParameterLabel.text = "Ingrese Radio"
+        shapeImage.image = UIImage(named: "circulo")
+        shapeImage.contentMode = .scaleAspectFit
+        continueButton.isEnabled = true
     }
-
-
 }
 
 extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
@@ -135,5 +180,32 @@ extension ViewController : UIPickerViewDelegate, UIPickerViewDataSource {
         self.configureViewWith(shape : shapes[row])
         self.shapeSelected = shapes[row]
         shapesSelector.resignFirstResponder()
+    }
+}
+
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
+    }
+    
+}
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

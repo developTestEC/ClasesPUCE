@@ -31,8 +31,45 @@ struct SettingsView: View {
                 }.multilineTextAlignment(.center).padding(.bottom,16)
             }.listRowSeparator(.hidden)
             // MARK: - SECTION ICON
+            Section (
+                header: Text("Iconos relacionados"),
+                footer: Text("Iconos")
 
+            ){
+
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack (spacing: 12){
+                        Image("AppIcon-Backpack").resizable().scaledToFit()
+                            .frame(width: 80,height: 80).cornerRadius(16)
+                        Image("AppIcon-Backpack").resizable().scaledToFit()
+                            .frame(width: 80,height: 80).cornerRadius(16)
+                        Image("AppIcon-Backpack").resizable().scaledToFit()
+                            .frame(width: 80,height: 80).cornerRadius(16)
+                        Image("AppIcon-Backpack").resizable().scaledToFit()
+                            .frame(width: 80,height: 80).cornerRadius(16)
+                        Image("AppIcon-Backpack").resizable().scaledToFit()
+                            .frame(width: 80,height: 80).cornerRadius(16)
+                        Image("AppIcon-Backpack").resizable().scaledToFit()
+                            .frame(width: 80,height: 80).cornerRadius(16)
+
+                    }
+                }
+            }
             // MARK: - SECTION ABOUT
+            Section (
+                header:Text("ABOUT THE APP"),
+                footer:  HStack{
+                    Spacer()
+                    Text("Copyright  All right reserved")
+                    Spacer()
+                }
+                    .padding(.vertical,8)
+            ){
+                AplicationCell(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowTintColor: .blue)
+                AplicationCell(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS, iPAd", rowTintColor: .red)
+            }
+
+
         }//: LIST
     }
 }
